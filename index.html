@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>freeplugin.me｜期間限定で「もらえる」DTMプラグイン速報</title>
+<meta name="description" content="期間限定で無料配布されているDTMプラグイン（入手すれば恒久所持できるもの）の速報と、期限が一目で分かるデータベース。">
+<style>
+  :root{
+    --bg:#0f1115; --panel:#171a21; --panel2:#1e222c; --line:#2a2f3c;
+    --text:#e8eaf0; --sub:#9aa3b2; --accent:#ffb020; --accent2:#4cc2ff;
+    --danger:#ff5d5d; --ok:#3ddc84;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);
+    font-family:"Hiragino Kaku Gothic ProN","Hiragino Sans","Noto Sans JP",system-ui,sans-serif;
+    line-height:1.7;}
+  a{color:var(--accent2)}
+  header{border-bottom:1px solid var(--line);background:var(--panel)}
+  .wrap{max-width:960px;margin:0 auto;padding:0 16px}
+  .sitehead{padding:28px 0 20px}
+  .logo{font-size:30px;font-weight:800;letter-spacing:.5px}
+  .logo .me{color:var(--accent)}
+  .tagline{color:var(--sub);margin-top:4px;font-size:15px}
+  nav{display:flex;gap:18px;padding:10px 0 14px;font-size:14px;flex-wrap:wrap}
+  nav a{color:var(--text);text-decoration:none;opacity:.85}
+  nav a:hover{opacity:1;text-decoration:underline}
+  main{padding:28px 0 60px}
+  h2{font-size:22px;margin:36px 0 6px;border-left:4px solid var(--accent);padding-left:10px}
+  h2:first-child{margin-top:0}
+  .lead{color:var(--sub);margin:0 0 18px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:18px}
+  .card h3{margin:0 0 4px;font-size:19px}
+  .maker{color:var(--sub);font-size:13px;margin:0 0 10px}
+  .badges{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}
+  .badge{font-size:12px;padding:2px 9px;border-radius:999px;border:1px solid var(--line);background:var(--panel2)}
+  .badge.free{color:var(--ok);border-color:var(--ok)}
+  .deadline{font-size:15px;margin:8px 0}
+  .deadline b{color:var(--accent)}
+  .remain{font-weight:700;color:var(--danger)}
+  .btn{display:inline-block;margin-top:8px;background:var(--accent);color:#111;
+    font-weight:700;text-decoration:none;padding:9px 16px;border-radius:8px}
+  .btn:hover{filter:brightness(1.08)}
+  .note{font-size:13px;color:var(--sub)}
+  article{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:22px;margin-top:16px}
+  article h3{margin-top:0;font-size:20px}
+  .coming{background:var(--panel);border:1px dashed var(--line);border-radius:12px;padding:16px 20px}
+  .coming li{margin:4px 0}
+  footer{border-top:1px solid var(--line);color:var(--sub);font-size:13px;padding:24px 0 40px}
+  .updated{font-size:13px;color:var(--sub)}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="sitehead">
+      <div class="logo">freeplugin<span class="me">.me</span></div>
+      <p class="tagline">期間限定で「もらえる」DTMプラグインの速報と期限データベース。入手すれば恒久所持できるものだけを集めます。</p>
+    </div>
+    <nav>
+      <a href="#db">無料配布データベース</a>
+      <a href="#articles">記事</a>
+      <a href="#about">このサイトについて</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <section id="db">
+    <h2>無料配布データベース（期限が近い順）</h2>
+    <p class="lead">現在、期間限定で無料入手できるプラグインの一覧です。無料トライアルや無料週末は含みません。<span class="updated">最終更新：2026-11-05</span></p>
+    <div class="grid" id="dbGrid"></div>
+    <p class="note">※ 価格・期限は配布元の公式ページで最終確認してください。入手には配布元のアカウント登録や $0 チェックアウトが必要な場合があります。</p>
+  </section>
+
+  <section id="articles">
+    <h2>記事</h2>
+    <article>
+      <h3>GForce「Axxess」「M-Tron Select 2」が12月1日まで無料配布中</h3>
+      <p>シンセメーカーの GForce Software が、シンセ「Axxess」と、メロトロン系音源「M-Tron」シリーズのセレクト版「M-Tron Select 2」を期間限定で無料配布しています。期間内に公式サイトで $0 チェックアウトすれば、恒久ライセンスとして自分のものになります。</p>
+      <p>対応形式は VST / VST3 / AU / AAX / スタンドアロン。入手は公式サイトから（要アカウント）。期限は <b>2026年12月1日</b> までです。詳細は上のデータベースから公式ページへどうぞ。</p>
+    </article>
+    <div class="coming">
+      <p style="margin-top:0"><b>今後の記事（準備中）</b></p>
+      <ul>
+        <li>プラグインの「期間限定無料」と「無料トライアル」は何が違う？ 見分け方まとめ</li>
+        <li>無料でもらえる定番プラグイン10選</li>
+        <li>Plugin Boutiqueの使い方と、買い物で損しないための基礎知識</li>
+        <li>DTM無料プラグインの探し方：情報源と注意点（詐欺的サイトの見分け方）</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>このサイトについて</h2>
+    <p>freeplugin.me は、DTMプラグインの期間限定無料配布と大型セールの情報をまとめる個人サイトです。「期間内に取得すれば一生自分のものになる」タイプの配布を中心に、期限が分かりやすい形で紹介します。</p>
+    <p class="note">アフィリエイト表記：当サイトはアフィリエイトプログラムに参加する場合があり、リンク経由で購入が発生すると運営者に紹介料が入ることがあります。無料配布の紹介で運営者に金銭が発生することはありません。</p>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>© 2026 freeplugin.me</p>
+  </div>
+</footer>
+
+<script>
+  // 無料配布データ（期限昇順）。ポイの見張り結果から更新する。
+  const items = [
+    {
+      name: "Axxess",
+      maker: "GForce Software",
+      desc: "GForceのシンセサイザー。公式サイトで $0 チェックアウトすると恒久ライセンスになります。",
+      deadline: "2026-12-01T23:59:59+09:00",
+      deadlineLabel: "2026年12月1日まで",
+      formats: ["VST", "VST3", "AU", "AAX", "スタンドアロン"],
+      url: "https://www.gforcesoftware.com/"
+    },
+    {
+      name: "M-Tron Select 2",
+      maker: "GForce Software",
+      desc: "メロトロン系音源「M-Tron」シリーズのセレクト版。Axxess と同じく期間限定の無料配布です。",
+      deadline: "2026-12-01T23:59:59+09:00",
+      deadlineLabel: "2026年12月1日まで",
+      formats: ["VST", "VST3", "AU", "AAX", "スタンドアロン"],
+      url: "https://www.gforcesoftware.com/"
+    }
+  ];
+
+  const grid = document.getElementById("dbGrid");
+  const now = new Date();
+  items
+    .slice()
+    .sort((a, b) => new Date(a.deadline) - new Date(b.deadline))
+    .forEach(it => {
+      const days = Math.ceil((new Date(it.deadline) - now) / 86400000);
+      const remain = days > 0 ? `あと ${days} 日` : "本日期限";
+      const card = document.createElement("div");
+      card.className = "card";
+      card.innerHTML = `
+        <h3>${it.name}</h3>
+        <p class="maker">${it.maker}</p>
+        <p>${it.desc}</p>
+        <div class="badges">
+          <span class="badge free">期間限定無料・恒久所持可</span>
+          ${it.formats.map(f => `<span class="badge">${f}</span>`).join("")}
+        </div>
+        <p class="deadline">期限：<b>${it.deadlineLabel}</b>（<span class="remain">${remain}</span>）</p>
+        <a class="btn" href="${it.url}" target="_blank" rel="noopener">公式サイトで入手する</a>
+      `;
+      grid.appendChild(card);
+    });
+</script>
+</body>
+</html>
