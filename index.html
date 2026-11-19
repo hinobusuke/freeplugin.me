@@ -60,6 +60,7 @@
     </div>
     <nav>
       <a href="#db">無料配布データベース</a>
+      <a href="#pb">Plugin Boutiqueセール</a>
       <a href="#articles">記事</a>
       <a href="#about">このサイトについて</a>
     </nav>
@@ -69,9 +70,29 @@
 <main class="wrap">
   <section id="db">
     <h2>無料配布データベース（期限が近い順）</h2>
-    <p class="lead">現在、期間限定で無料入手できるプラグインの一覧です。無料トライアルや無料週末は含みません。<span class="updated">最終更新：2026-11-05</span></p>
+    <p class="lead">現在、期間限定で無料入手できるプラグインの一覧です。無料トライアルや無料週末は含みません。<span class="updated">最終更新：2026-11-19</span></p>
     <div class="grid" id="dbGrid"></div>
     <p class="note">※ 価格・期限は配布元の公式ページで最終確認してください。入手には配布元のアカウント登録や $0 チェックアウトが必要な場合があります。</p>
+  </section>
+
+  <section id="pb">
+    <h2>Plugin Boutiqueのセール（広告）</h2>
+    <p class="lead">プラグイン専門ストア Plugin Boutique では現在ブラックフライデーセールが開催中で、購入すると無料ギフトが選べるキャンペーンも行われています（2026年11月19日確認）。下のリンクはアフィリエイトリンク（広告）です。リンク経由で購入が発生すると運営者に紹介料が入りますが、購入価格は通常と変わりません。</p>
+    <div class="card">
+      <h3>Plugin Boutique セール会場</h3>
+      <p class="maker">Plugin Boutique（Beatport Group）</p>
+      <p>セール対象プラグインの一覧ページです。無料配布の受け取りついでに、気になっていたプラグインが値引きされていないかチェックするのに向いています。</p>
+      <div class="badges">
+        <span class="badge">広告・アフィリエイトリンク</span>
+        <span class="badge">紹介料 15%（運営者側）</span>
+      </div>
+      <a class="btn" href="https://www.pluginboutique.com/deals?a_aid=ssql7hpgvxyja&amp;a_cid=1461e21b" target="_blank" rel="sponsored noopener">セール会場を見る</a>
+      <a class="btn" href="https://www.pluginboutique.com/?a_aid=ssql7hpgvxyja&amp;a_cid=1461e21b" target="_blank" rel="sponsored noopener" style="background:var(--panel2);color:var(--text);border:1px solid var(--line)">トップページへ</a>
+      <div style="margin-top:16px;text-align:center">
+        <script type="text/javascript" src="https://pluginboutique.postaffiliatepro.com/scripts/hfwq3b89wu2?a_aid=ssql7hpgvxyja&a_bid=1bb877cd"></script>
+      </div>
+      <p class="note">※ バナーは Plugin Boutique 公式アフィリエイトプログラムの汎用バナーです。セール内容・価格・期限はリンク先の公式ページで最終確認してください。</p>
+    </div>
   </section>
 
   <section id="articles">
@@ -105,7 +126,7 @@
   <section id="about">
     <h2>このサイトについて</h2>
     <p>freeplugin.me は、DTMプラグインの期間限定無料配布と大型セールの情報をまとめる個人サイトです。「期間内に取得すれば一生自分のものになる」タイプの配布を中心に、期限が分かりやすい形で紹介します。</p>
-    <p class="note">アフィリエイト表記：当サイトはアフィリエイトプログラムに参加する場合があり、リンク経由で購入が発生すると運営者に紹介料が入ることがあります。無料配布の紹介で運営者に金銭が発生することはありません。</p>
+    <p class="note">アフィリエイト表記：当サイトは Plugin Boutique（Beatport Group）のアフィリエイトプログラムに参加しています。「広告」と明記したリンクやバナーはアフィリエイトリンクで、リンク経由で購入が発生すると運営者に紹介料が入ります。購入価格が変わることはありません。メーカー公式サイトへの無料配布リンクはアフィリエイトリンクではなく、その紹介で運営者に金銭が発生することはありません。</p>
   </section>
 </main>
 
@@ -163,7 +184,7 @@
     .sort((a, b) => new Date(a.deadline) - new Date(b.deadline))
     .forEach(it => {
       const days = Math.ceil((new Date(it.deadline) - now) / 86400000);
-      const remain = days > 0 ? `あと ${days} 日` : "本日期限";
+      const remain = days > 0 ? `あと ${days} 日` : (days === 0 ? "本日期限" : "終了");
       const card = document.createElement("div");
       card.className = "card";
       card.innerHTML = `
