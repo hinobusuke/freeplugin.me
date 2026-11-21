@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Beatportの使い方：DJ向け楽曲ダウンロードストア入門｜freeplugin.me</title>
+<meta name="description" content="DJ向け楽曲ダウンロードストア Beatport の買い方、探し方、レコードプールとの使い分け。（広告を含みます）">
+<style>
+  :root{
+    --bg:#0f1115; --panel:#171a21; --panel2:#1e222c; --line:#2a2f3c;
+    --text:#e8eaf0; --sub:#9aa3b2; --accent:#ffb020; --accent2:#4cc2ff;
+    --danger:#ff5d5d; --ok:#3ddc84;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);
+    font-family:"Hiragino Kaku Gothic ProN","Hiragino Sans","Noto Sans JP",system-ui,sans-serif;
+    line-height:1.7;}
+  a{color:var(--accent2)}
+  header{border-bottom:1px solid var(--line);background:var(--panel)}
+  .wrap{max-width:960px;margin:0 auto;padding:0 16px}
+  .sitehead{padding:28px 0 20px}
+  .logo{font-size:30px;font-weight:800;letter-spacing:.5px}
+  .logo .me{color:var(--accent)}
+  .tagline{color:var(--sub);margin-top:4px;font-size:15px}
+  nav{display:flex;gap:18px;padding:10px 0 14px;font-size:14px;flex-wrap:wrap}
+  nav a{color:var(--text);text-decoration:none;opacity:.85}
+  nav a:hover{opacity:1;text-decoration:underline}
+  main{padding:28px 0 60px}
+  h2{font-size:22px;margin:36px 0 6px;border-left:4px solid var(--accent);padding-left:10px}
+  h2:first-child{margin-top:0}
+  .lead{color:var(--sub);margin:0 0 18px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:18px}
+  .card h3{margin:0 0 4px;font-size:19px}
+  .maker{color:var(--sub);font-size:13px;margin:0 0 10px}
+  .badges{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}
+  .badge{font-size:12px;padding:2px 9px;border-radius:999px;border:1px solid var(--line);background:var(--panel2)}
+  .badge.free{color:var(--ok);border-color:var(--ok)}
+  .deadline{font-size:15px;margin:8px 0}
+  .deadline b{color:var(--accent)}
+  .remain{font-weight:700;color:var(--danger)}
+  .btn{display:inline-block;margin-top:8px;background:var(--accent);color:#111;
+    font-weight:700;text-decoration:none;padding:9px 16px;border-radius:8px}
+  .btn:hover{filter:brightness(1.08)}
+  .note{font-size:13px;color:var(--sub)}
+  article{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:22px;margin-top:16px}
+  article h3{margin-top:0;font-size:20px}
+  .coming{background:var(--panel);border:1px dashed var(--line);border-radius:12px;padding:16px 20px}
+  .coming li{margin:4px 0}
+  footer{border-top:1px solid var(--line);color:var(--sub);font-size:13px;padding:24px 0 40px}
+  .updated{font-size:13px;color:var(--sub)}
+
+  h1{font-size:24px;line-height:1.5;margin:0 0 14px}
+  .backlink{font-size:14px;margin:0 0 16px}
+  .relbox{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px 20px;margin-top:20px}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="sitehead">
+      <div class="logo"><a href="../index.html" style="color:inherit;text-decoration:none">freeplugin<span class="me">.me</span></a></div>
+      <p class="tagline">期間限定で「もらえる」DTMプラグインの速報と期限データベース。入手すれば恒久所持できるものだけを集めます。</p>
+    </div>
+    <nav>
+      <a href="../index.html#db">無料配布データベース</a>
+      <a href="../index.html#pb">Plugin Boutiqueセール</a>
+      <a href="../index.html#articles">記事</a>
+      <a href="../index.html#about">このサイトについて</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <p class="backlink"><a href="../index.html#articles">← 記事一覧へ戻る</a></p>
+  <article>
+    <h1>Beatportの使い方：DJ向け楽曲ダウンロードストア入門</h1>
+    <p>Beatport は、DJがプレイ用の楽曲を1曲単位で購入するダウンロードストアです。ハウス、テクノ、ドラムンベースなど電子音楽の新譜が中心で、リリース直後の曲を DJ 用途の音質とメタデータ（BPMやキー表記）付きで入手できます。（本記事のストアへのリンクは広告・アフィリエイトリンクです）</p>
+    <p><b>買い物の流れ</b>：アカウントを作成し、曲をカートに入れて決済すると、購入した曲を自分のライブラリからダウンロードできます。形式は MP3 のほか、対応作品ではロスレス（WAV／AIFF）が選べる場合があり、価格は形式や曲によって変わります。クラブや配信で使う前提なら、購入前に形式と価格を必ず確認してください。</p>
+    <p><b>探し方のコツ</b>：ジャンル別チャート、レーベルページ、アーティストページをたどるのが基本です。「今フロアでかかっている曲」はチャート経由が早く、好きなアーティストの新譜はフォローしておくと見逃しません。試聴は各曲のページでできるので、ロングミックスの中の一部分だけを聞いて買う失敗を避けるため、展開までしっかり試聴するのがおすすめです。</p>
+    <p><b>ダウンロードストアとレコードプールの違い</b>：Beatport は「買った曲が自分のものになる」買い切り型です。月額で DJ 用エディットをまとめて入手するレコードプール型（DJcity など）とは性質が違うため、ピンポイントで欲しい原曲があるときは Beatport、現場用の素材を広く集めたいときはプール、と使い分けると無駄がありません。</p>
+    <p><b>セールとクーポン</b>：Beatport でもセールや割引コードの配布が定期的にあります。急ぎでない曲はウィッシュリスト（ホールド）に入れておき、セールのタイミングでまとめて買うと出費を抑えられます。</p>
+    <p>ストアはこちら（広告）：<a href="https://pluginboutique.postaffiliatepro.com/scripts/hfwq3c89wu2?a_aid=ssql7hpgvxyja&amp;desturl=https%3A%2F%2Fwww.beatport.com%2F&amp;a_cid=0be88686" target="_blank" rel="sponsored noopener">Beatport トップページ</a>。価格・形式・セール条件はリンク先の公式ページで最終確認してください。</p>
+  </article>
+  <div class="relbox">
+    <p style="margin:0"><b>関連</b>：<a href="../index.html#db">無料配布データベース（期限が近い順）</a>／<a href="../index.html#articles">記事一覧</a></p>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>© 2026 freeplugin.me</p>
+  </div>
+</footer>
+</body>
+</html>
